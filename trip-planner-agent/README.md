@@ -1,64 +1,90 @@
-# AI Trip Planner
+# AI Trip Planner 🌍
 
-An AI-powered trip planning application that uses CrewAI to help plan your perfect trip. The application uses multiple AI agents working together to research destinations, create itineraries, manage budgets, and find accommodations.
+An intelligent travel planning assistant powered by CrewAI that revolutionizes your trip planning experience. This application orchestrates multiple AI agents working in harmony to create personalized travel experiences, from destination research to detailed itinerary planning.
 
-## Features
+## ✨ Features
 
-- 🌍 Destination research based on your preferences
-- 📅 Detailed day-by-day itinerary planning
-- 💰 Comprehensive budget breakdown
-- 🏨 Accommodation recommendations
-- 🎨 Beautiful Streamlit interface
+- **Smart Destination Research** - AI-powered analysis of travel destinations based on your preferences and constraints
+- **Intelligent Itinerary Creation** - Detailed day-by-day planning that optimizes your time and experiences
+- **Budget Management** - Comprehensive budget breakdown and cost optimization suggestions
+- **Accommodation Finder** - Personalized lodging recommendations based on your preferences and budget
+- **Interactive Interface** - Modern and intuitive Streamlit-based user interface
 
-## Installation
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.11 or higher
+- Git
+
+### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/trip-planner-agent.git
+git clone https://github.com/EngHuzaifa/trip-planner-agent.git
 cd trip-planner-agent
 ```
 
-2. Install the package in development mode:
+2. Create and activate a virtual environment (recommended):
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
+```
+
+3. Install the package in development mode:
 ```bash
 pip install -e .
 ```
 
-## Usage
+### Environment Setup
 
-There are two ways to run the application:
-
-1. Using the installed script:
-```bash
-trip-planner
+Create a `.env` file in the root directory and add your API keys:
+```env
+GEMINI_API_KEY=your_api_key_here
 ```
 
-2. Using Streamlit directly:
-```bash
-streamlit run streamlit_app.py
-```
 
-## Project Structure
+## 🏗️ Project Structure
 
 ```
 trip-planner-agent/
 ├── src/
 │   └── trip_planner_agent/
-│       ├── app.py              # Streamlit interface
 │       └── crews/
 │           ├── main.py         # Main flow definition
 │           └── trip_crew.py    # CrewAI agents and tasks
 ├── pyproject.toml             # Project configuration
-├── README.md                  # This file
-└── streamlit_app.py          # Entry point for Streamlit
+├── README.md                  # Documentation
+
 ```
 
-## Development
+## 🛠️ Technologies
 
-To install development dependencies:
-```bash
-pip install -e ".[dev]"
-```
+- [CrewAI](https://github.com/joaomdmoura/crewAI) - Multi-agent orchestration framework
 
-## License
 
-MIT License
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## ✨ Acknowledgments
+
+- [CrewAI](https://github.com/joaomdmoura/crewAI) for the amazing multi-agent framework
+- The open-source community for their invaluable tools and libraries
+
+## 📧 Contact
+
+Muhammad Huzaifa - muhammadhuzaifaai890@gmail.com
+
+
+
