@@ -742,6 +742,7 @@ dependencies = [
     { name = "crewai" },
     { name = "crewai-tools" },
     { name = "markdown-pdf" },
+    { name = "pydantic" },
     { name = "streamlit" },
 ]
 
@@ -750,6 +751,7 @@ requires-dist = [
     { name = "crewai", specifier = ">=0.102.0" },
     { name = "crewai-tools", specifier = ">=0.36.0" },
     { name = "markdown-pdf", specifier = ">=1.3.3" },
+    { name = "pydantic", specifier = ">=2.10.6" },
     { name = "streamlit", specifier = ">=1.43.0" },
 ]
 

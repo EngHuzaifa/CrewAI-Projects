@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 import sys
 
-from markdown_pdf import MarkdownPdf, Section  
+from markdown_pdf import MarkdownPdf, Section
 
 from enterprise_sales_pdf.crew import SalesPdfCrew
+
 
 
 
@@ -13,21 +14,17 @@ def run():
     """
     inputs = {
         "company_info": {
-            "name": "PIAIC",
+            "name": "crewai",
             "product_name": "Enterprise Sales PDF Service",
             "website": "https://www.crewai.com",
             "sales_rep_name": "Muhammad Huzaifa",
-            "sales_rep_contact": "info@piaic.org",
+            "sales_rep_contact": "muhammadhuzaifaai890@gmail.com",
         },
         "lead_info": {
             "name": "Alice Johnson",
             "company": "Innovative Solutions Inc.",
             "industry": "Information Technology",
         },
-        "task_details": {
-            "objective": "Generate Sales PDF",
-            "additional_notes": "Use the provided details to customize and generate the Sales PDF document."
-        }
     }
 
     result = SalesPdfCrew().crew().kickoff(inputs=inputs)
@@ -41,7 +38,7 @@ def train():
     """
     Train the crew for a given number of iterations.
     """
-    inputs = {"topic": "Agentic AI"}
+    inputs = {"topic": "AI LLMs"}
     try:
         SalesPdfCrew().crew().train(
             n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs
@@ -66,7 +63,7 @@ def test():
     """
     Test the crew execution and returns the results.
     """
-    inputs = {"topic": "Agentic AI"}
+    inputs = {"topic": "AI LLMs"}
     try:
         SalesPdfCrew().crew().test(
             n_iterations=int(sys.argv[1]), openai_model_name=sys.argv[2], inputs=inputs
